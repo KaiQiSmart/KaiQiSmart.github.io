@@ -5,143 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>鎧祺智能設計 | KaiQi Smart Studio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: "Noto Sans TC", Arial, sans-serif;
-      background: #f0f8ff;
+      background: #f4f9ff;
       color: #204080;
     }
-    header {
-      background: #204080;
-      color: white;
-      padding: 20px 40px;
-      font-size: 1.5rem;
-      font-weight: bold;
+    nav {
+      background-color: #204080;
+      padding: 16px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .main {
-      padding: 40px 60px;
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px 15px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
     .logo {
-      width: 180px;
-      box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+      display: block;
+      max-width: 180px;
+      margin: 0 auto 30px auto;
+      box-shadow: 0 5px 12px rgba(0,0,0,0.15);
       border-radius: 12px;
     }
-    .title-area {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-    .text-block {
-      flex: 1;
-    }
     h1 {
-      margin-top: 0;
+      text-align: center;
       font-size: 2.5rem;
       color: #2a6ebb;
+      margin-bottom: 10px;
     }
     h2 {
-      font-size: 1.2rem;
+      text-align: center;
+      font-size: 1.3rem;
       color: #204080;
-      margin-top: 0;
+      margin-bottom: 30px;
     }
     .slogan {
-      font-weight: 700;
-      line-height: 1.6;
+      font-weight: 600;
+      font-size: 1.2rem;
       color: #2a6ebb;
-      margin: 20px 0;
+      text-align: center;
+      line-height: 1.8;
+      margin-bottom: 30px;
     }
     p {
+      font-size: 1.05rem;
       line-height: 1.8;
-      font-size: 1.1rem;
       color: #333;
-    }
-    h3 {
-      margin-top: 50px;
-      font-size: 1.4rem;
-      border-left: 5px solid #2a6ebb;
-      padding-left: 12px;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 1rem;
-      line-height: 1.6;
-    }
-    .btn-contact {
-      display: inline-block;
-      background: #2a6ebb;
-      color: white;
-      padding: 12px 28px;
-      border-radius: 30px;
-      font-weight: 600;
-      font-size: 1rem;
-      margin-top: 30px;
-      text-decoration: none;
-    }
-    .btn-contact:hover {
-      background: #5ab0f5;
+      text-align: center;
+      margin-bottom: 50px;
     }
     footer {
-      margin-top: 60px;
-      padding: 30px 40px;
-      text-align: center;
-      font-size: 0.95rem;
-      color: #777;
       background: #eef4ff;
+      text-align: center;
+      padding: 30px 20px;
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #2a6ebb;
+      text-decoration: none;
     }
 
-    @media(max-width: 768px) {
-      .main {
-        padding: 20px;
-      }
-      .title-area {
+    @media (max-width: 600px) {
+      nav {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
       }
-      .logo {
-        margin: 0 auto;
+      nav a {
+        margin: 6px 0;
       }
     }
   </style>
 </head>
 <body>
 
-<header>
-  鎧祺智能設計 | KaiQi Smart Studio
-</header>
+<!-- 🔷 導覽列 -->
+<nav>
+  <a href="/">首頁</a>
+  <a href="/about">關於我們</a>
+  <a href="/services">服務項目</a>
+  <a href="/portfolio">作品案例</a>
+  <a href="/news">最新消息</a>
+  <a href="/contact">聯絡我們</a>
+</nav>
 
-<div class="main">
-  <div class="title-area">
-    <img src="logo.png" alt="鎧祺智能設計 Logo" class="logo" />
-    <div class="text-block">
-      <h1>鎧祺智能設計</h1>
-      <h2>KaiQi Smart Studio</h2>
-      <div class="slogan">
-        熱愛驅動設計，專業實現創新<br />
-        來自興趣的動力，成就每一次專業突破<br />
-        從概念發想到設計落地，完整實現您的需求
-      </div>
-    </div>
+<!-- 🔷 首頁內容 -->
+<div class="container">
+  <img src="/assets/logo.png" alt="KaiQi Smart Studio Logo" class="logo" />
+
+  <h1>鎧祺智能設計</h1>
+  <h2>KaiQi Smart Studio</h2>
+
+  <div class="slogan">
+    熱愛驅動設計，專業實現創新<br />
+    來自興趣的動力，成就每一次專業突破<br />
+    從概念發想到設計落地，完整實現您的需求
   </div>
 
   <p>
-    我們專注於機構模組設計、數值模擬、機電整合與智能自動化，<br />
-    結合專業技術與精實開發思維，協助客戶將想法轉為高品質成果。
+    我們專注於機構設計、數值模擬、機電整合與智能自動化，<br />
+    結合專業技術與創新思維，協助客戶將想法轉化為高品質成果。
   </p>
-
-  <h3>服務項目</h3>
-  <ul>
-    <li><strong>機構模組設計與產品開發：</strong> 機構創新設計、3D建模、工程圖製作</li>
-    <li><strong>設計模擬與分析：</strong> 結構、熱流、運動、材料等多樣分析</li>
-    <li><strong>機電整合與控制系統設計：</strong> 機構 × 控制 × 軟體一站式設計</li>
-    <li><strong>自動化系統導入與擴充：</strong> 現有設備升級、流程優化自動化方案</li>
-  </ul>
-
-  <a href="mailto:your.email@example.com" class="btn-contact">聯絡我們</a>
 </div>
 
+<!-- 🔷 頁尾 -->
 <footer>
   &copy; 2025 鎧祺智能設計 KaiQi Smart Studio. All rights reserved.<br />
   諮詢專線：<a href="tel:0932603741">0932-603-741</a>
