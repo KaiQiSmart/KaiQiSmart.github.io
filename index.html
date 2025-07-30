@@ -6,12 +6,12 @@
 <title>鎧祺智能設計 | KaiQi Smart Studio</title>
 <meta name="description" content="專注於機構設計、數值模擬、機電整合與智能自動化的專業技術服務。" />
 <style>
-  /* Reset & Base */
   * {
     box-sizing: border-box;
   }
   body {
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
     font-family: "Noto Sans TC", Arial, sans-serif;
     background: linear-gradient(135deg, #e3f2fd, #ffffff);
     color: #222;
@@ -20,7 +20,6 @@
     text-decoration: none;
     color: #2a6ebb;
   }
-  /* 頂部導覽 */
   header {
     background: #204080;
     color: white;
@@ -32,25 +31,33 @@
   header span.logo {
     color: #6ec6ff;
   }
-  /* 主要內容區 */
   main {
     max-width: 900px;
     margin: 40px auto;
     background: white;
     padding: 30px 40px;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  .logo-img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
   }
   h1 {
-    margin-top: 0;
+    text-align: center;
     color: #2a6ebb;
     font-size: 2.8rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
   }
   h2 {
+    text-align: center;
     color: #204080;
-    border-bottom: 3px solid #2a6ebb;
-    padding-bottom: 6px;
-    margin-top: 2.4rem;
+    font-size: 1.5rem;
+    margin-top: 0;
     margin-bottom: 1rem;
   }
   .slogan {
@@ -59,18 +66,28 @@
     color: #2a6ebb;
     line-height: 1.5;
     margin-bottom: 25px;
+    text-align: center;
   }
-  p, li {
+  p {
     font-size: 1.1rem;
     line-height: 1.6;
+    text-align: center;
+  }
+  hr.decor {
+    width: 60px;
+    border: 2px solid #2a6ebb;
+    margin: 25px auto 40px auto;
+    border-radius: 5px;
   }
   ul {
     padding-left: 1.6em;
+    margin-top: 40px;
   }
   li {
     margin-bottom: 0.8em;
+    font-size: 1.1rem;
+    line-height: 1.6;
   }
-  /* 按鈕 */
   .btn-contact {
     display: inline-block;
     background: #2a6ebb;
@@ -81,27 +98,22 @@
     font-size: 1.1rem;
     cursor: pointer;
     transition: background 0.3s ease;
-    margin-top: 25px;
+    margin-top: 30px;
   }
   .btn-contact:hover {
     background: #6ec6ff;
   }
-  /* LOGO圖片樣式 */
-  .logo-img {
-    max-width: 150px;
-    margin: 20px auto 30px auto;
-    display: block;
+  .contact-section {
+    text-align: center;
   }
-  /* footer */
   footer {
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: #777;
-    margin: 40px 0 20px 0;
+    margin: 50px 0 20px 0;
     line-height: 1.6;
   }
-  /* 響應式 */
-  @media(max-width:600px){
+  @media (max-width: 600px) {
     main {
       margin: 20px;
       padding: 20px;
@@ -121,11 +133,10 @@
 <header><span class="logo">鎧祺智能設計</span> | KaiQi Smart Studio</header>
 
 <main>
-  <!-- LOGO圖片顯示 -->
   <img src="logo.png" alt="鎧祺智能設計 Logo" class="logo-img" />
-
   <h1>鎧祺智能設計</h1>
   <h2>KaiQi Smart Studio</h2>
+  <hr class="decor" />
 
   <p class="slogan">
     熱愛驅動設計，專業實現創新<br />
@@ -138,7 +149,7 @@
     結合專業技術與創新思維，協助客戶將想法落實為高品質成果。
   </p>
 
-  <h2>服務項目</h2>
+  <h2 style="text-align:left;">服務項目</h2>
   <ul>
     <li><strong>機構設計與產品開發</strong><br />機構創新設計、3D建模、工程圖繪製</li>
     <li><strong>設計模擬與分析</strong><br />結構、熱流、運動、材料等多元模擬分析</li>
@@ -146,7 +157,9 @@
     <li><strong>自動化系統規劃與擴充</strong><br />根據客戶需求，彈性升級與擴展自動化方案</li>
   </ul>
 
-  <a href="mailto:your.email@example.com" class="btn-contact">聯絡我們</a>
+  <div class="contact-section">
+    <a href="mailto:your.email@example.com" class="btn-contact">聯絡我們</a>
+  </div>
 </main>
 
 <footer>
