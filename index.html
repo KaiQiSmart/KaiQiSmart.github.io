@@ -86,10 +86,11 @@
   .btn-contact:hover {
     background: #6ec6ff;
   }
-  /* LOGO示意圖片 */
+  /* LOGO圖片樣式 */
   .logo-img {
     max-width: 150px;
-    margin: 20px 0 30px 0;
+    margin: 20px auto 30px auto;
+    display: block;
   }
   /* footer */
   footer {
@@ -97,6 +98,7 @@
     font-size: 0.9rem;
     color: #777;
     margin: 40px 0 20px 0;
+    line-height: 1.6;
   }
   /* 響應式 */
   @media(max-width:600px){
@@ -119,8 +121,8 @@
 <header><span class="logo">鎧祺智能設計</span> | KaiQi Smart Studio</header>
 
 <main>
-  <!-- LOGO圖片區 (如果有圖片可放) -->
-  <!-- <img src="logo.png" alt="鎧祺智能設計 Logo" class="logo-img" /> -->
+  <!-- LOGO圖片顯示 -->
+  <img src="logo.png" alt="鎧祺智能設計 Logo" class="logo-img" />
 
   <h1>鎧祺智能設計</h1>
   <h2>KaiQi Smart Studio</h2>
@@ -148,7 +150,8 @@
 </main>
 
 <footer>
-  &copy; 2025 鎧祺智能設計 KaiQi Smart Studio. All rights reserved.
+  &copy; 2025 鎧祺智能設計 KaiQi Smart Studio. All rights reserved.<br />
+  諮詢專線：<a href="tel:0932603741">0932-603-741</a>
 </footer>
 
 </body>
