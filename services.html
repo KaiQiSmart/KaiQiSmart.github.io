@@ -1,64 +1,152 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <title>服務項目 | KaiQi Smart Studio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>服務項目 | 鎧祺智能設計 KaiQi Smart Studio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", Arial, sans-serif;
+      background: #f4f9ff;
+      color: #204080;
+    }
+    nav {
+      background-color: #204080;
+      padding: 16px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px 15px;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      color: #222;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      color: #2a6ebb;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 40px;
+      color: #204080;
+      display: flex;
+      align-items: center;
+    }
+    h2::before {
+      content: "◆";
+      color: #2a6ebb;
+      margin-right: 10px;
+      font-size: 1.2rem;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+    li {
+      line-height: 1.8;
+      font-size: 1.05rem;
+      color: #333;
+    }
+    p.intro {
+      text-align: center;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 40px;
+      color: #444;
+    }
+    footer {
+      background: #eef4ff;
+      text-align: center;
+      padding: 30px 20px;
+      color: #555;
+      font-size: 0.95rem;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #2a6ebb;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        margin: 6px 0;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">首頁</a></li>
-        <li><a href="about.html">關於我們</a></li>
-        <li><a href="services.html" class="active">服務項目</a></li>
-        <li><a href="portfolio.html">作品案例</a></li>
-        <li><a href="news.html">最新消息</a></li>
-        <li><a href="contact.html">聯絡我們</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section class="page-header">
-      <h1>服務項目</h1>
-      <p>從構想到實現，我們提供完整設計與技術支援</p>
-    </section>
+<!-- 🔷 導覽列 -->
+<nav>
+  <a href="index.html">首頁</a>
+  <a href="about.html">關於我們</a>
+  <a href="services.html" style="text-decoration: underline;">服務項目</a>
+  <a href="portfolio.html">作品案例</a>
+  <a href="news.html">最新消息</a>
+  <a href="contact.html">聯絡我們</a>
+</nav>
 
-    <section class="services-list">
-      <h2>🔷 機構設計與產品開發</h2>
-      <ul>
-        <li>3D建模與結構設計</li>
-        <li>外觀與機構構想整合</li>
-        <li>零件優化與圖面輸出</li>
-      </ul>
+<!-- 🔷 主內容 -->
+<div class="container">
+  <h1>服務項目</h1>
+  <p class="intro">
+    從構想到實現，我們提供完整設計與技術支援
+  </p>
 
-      <h2>🔷 數值模擬與分析</h2>
-      <ul>
-        <li>結構分析（應力、變形、疲勞壽命）</li>
-        <li>熱流模擬（冷卻效率、溫度分布）</li>
-        <li>成型與熱傳分析（含管道流動、傳熱行為）</li>
-        <li>控制系統建模與模擬（時域響應、穩定性分析）</li>
-      </ul>
+  <h2>機構設計與產品開發</h2>
+  <ul>
+    <li>3D建模與結構設計</li>
+    <li>外觀與機構構想整合</li>
+    <li>零件優化與圖面輸出</li>
+  </ul>
 
-      <h2>🔷 控制系統與自動化整合</h2>
-      <ul>
-        <li>影像擷取與瑕疵檢測（AOI）</li>
-        <li>馬達控制與感測整合（如無位置感測控制）</li>
-        <li>自動化設備規劃與整合</li>
-      </ul>
+  <h2>數值模擬與分析</h2>
+  <ul>
+    <li>結構分析（應力、變形、疲勞壽命）</li>
+    <li>熱流模擬（冷卻效率、溫度分布）</li>
+    <li>內型與製程傳輸分析（含管流動、傳熱行為）</li>
+    <li>控制系統建模與模擬（時域響應、穩定性分析）</li>
+  </ul>
 
-      <h2>🔷 技術諮詢與教學服務</h2>
-      <ul>
-        <li>專題與論文建模指導</li>
-        <li>產品可行性評估與技術顧問</li>
-        <li>客製化教學課程與實作指導</li>
-      </ul>
-    </section>
-  </main>
+  <h2>控制系統與自動化整合</h2>
+  <ul>
+    <li>影像擷取與瑕疵檢測（AOI）</li>
+    <li>馬達控制與感測整合（如無位置感測控制）</li>
+    <li>自動化設備規劃與整合</li>
+  </ul>
 
-  <footer>
-    <p>&copy; 2025 KaiQi Smart Studio. All rights reserved.</p>
-  </footer>
+  <h2>技術諮詢與教學服務</h2>
+  <ul>
+    <li>專題與論文建模指導</li>
+    <li>產品可行性評估與技術顧問</li>
+    <li>客製化教學課程與實作指導</li>
+  </ul>
+</div>
+
+<!-- 🔷 頁尾 -->
+<footer>
+  &copy; 2025 鎧祺智能設計 KaiQi Smart Studio. All rights reserved.<br />
+  諮詢專線：<a href="tel:0932603741">0932-603-741</a>
+</footer>
+
 </body>
 </html>
